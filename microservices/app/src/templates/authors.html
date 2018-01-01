@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>
+	Authors
+</title>
+</head>
+<body>
+	<h1>Name : &nbsp; No. of posts</h1>
+	{% for i in range(10) %}
+		{% set count = [0] %}
+			{% for j in range(100) %}
+				{% if data2[j]["userId"]==data1[i]["id"] %}
+					{% if count.append(count.pop() + 1) %}
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		<font size="5">{{data1[i]["name"]}} : &nbsp; {{ count.pop() }}</font><br>
+	{% endfor %}
+</body>
+</html>

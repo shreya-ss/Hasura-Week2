@@ -1,0 +1,7 @@
+- alias: hasura
+  config:
+    configmap: controller-conf
+    namespace: affability73-hasura
+  data: null
+  kubeContext: affability73
+  name: affability73
